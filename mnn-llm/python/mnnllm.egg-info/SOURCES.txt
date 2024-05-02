@@ -1,0 +1,10 @@
+setup.py
+./mnnllm.cpp
+../build/libllm.so
+../libs/libMNN.so
+../libs/libMNN_Express.so
+mnnllm/__init__.py
+mnnllm.egg-info/PKG-INFO
+mnnllm.egg-info/SOURCES.txt
+mnnllm.egg-info/dependency_links.txt
+mnnllm.egg-info/top_level.txt
