@@ -1,0 +1,298 @@
+llama_model_loader: loaded meta data with 19 key-value pairs and 195 tensors from /root/data/Qwen-1_8B/ggml-model-q5_k_m.gguf (version GGUF V3 (latest))
+llama_model_loader: Dumping metadata keys/values. Note: KV overrides do not apply in this output.
+llama_model_loader: - kv   0:                       general.architecture str              = qwen
+llama_model_loader: - kv   1:                               general.name str              = Qwen
+llama_model_loader: - kv   2:                        qwen.context_length u32              = 8192
+llama_model_loader: - kv   3:                           qwen.block_count u32              = 24
+llama_model_loader: - kv   4:                      qwen.embedding_length u32              = 2048
+llama_model_loader: - kv   5:                   qwen.feed_forward_length u32              = 11008
+llama_model_loader: - kv   6:                        qwen.rope.freq_base f32              = 10000.000000
+llama_model_loader: - kv   7:                  qwen.rope.dimension_count u32              = 128
+llama_model_loader: - kv   8:                  qwen.attention.head_count u32              = 16
+llama_model_loader: - kv   9:      qwen.attention.layer_norm_rms_epsilon f32              = 0.000001
+llama_model_loader: - kv  10:                       tokenizer.ggml.model str              = gpt2
+llama_model_loader: - kv  11:                      tokenizer.ggml.tokens arr[str,151936]  = ["!", "\"", "#", "$", "%", "&", "'", ...
+llama_model_loader: - kv  12:                  tokenizer.ggml.token_type arr[i32,151936]  = [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, ...
+llama_model_loader: - kv  13:                      tokenizer.ggml.merges arr[str,151387]  = ["Ġ Ġ", "ĠĠ ĠĠ", "i n", "Ġ t",...
+llama_model_loader: - kv  14:                tokenizer.ggml.bos_token_id u32              = 151643
+llama_model_loader: - kv  15:                tokenizer.ggml.eos_token_id u32              = 151643
+llama_model_loader: - kv  16:            tokenizer.ggml.unknown_token_id u32              = 151643
+llama_model_loader: - kv  17:               general.quantization_version u32              = 2
+llama_model_loader: - kv  18:                          general.file_type u32              = 17
+llama_model_loader: - type  f32:   73 tensors
+llama_model_loader: - type q5_1:   12 tensors
+llama_model_loader: - type q8_0:   12 tensors
+llama_model_loader: - type q5_K:   73 tensors
+llama_model_loader: - type q6_K:   25 tensors
+llm_load_vocab: special tokens definition check successful ( 293/151936 ).
+llm_load_print_meta: format           = GGUF V3 (latest)
+llm_load_print_meta: arch             = qwen
+llm_load_print_meta: vocab type       = BPE
+llm_load_print_meta: n_vocab          = 151936
+llm_load_print_meta: n_merges         = 151387
+llm_load_print_meta: n_ctx_train      = 8192
+llm_load_print_meta: n_embd           = 2048
+llm_load_print_meta: n_head           = 16
+llm_load_print_meta: n_head_kv        = 16
+llm_load_print_meta: n_layer          = 24
+llm_load_print_meta: n_rot            = 128
+llm_load_print_meta: n_embd_head_k    = 128
+llm_load_print_meta: n_embd_head_v    = 128
+llm_load_print_meta: n_gqa            = 1
+llm_load_print_meta: n_embd_k_gqa     = 2048
+llm_load_print_meta: n_embd_v_gqa     = 2048
+llm_load_print_meta: f_norm_eps       = 0.0e+00
+llm_load_print_meta: f_norm_rms_eps   = 1.0e-06
+llm_load_print_meta: f_clamp_kqv      = 0.0e+00
+llm_load_print_meta: f_max_alibi_bias = 0.0e+00
+llm_load_print_meta: f_logit_scale    = 0.0e+00
+llm_load_print_meta: n_ff             = 11008
+llm_load_print_meta: n_expert         = 0
+llm_load_print_meta: n_expert_used    = 0
+llm_load_print_meta: causal attn      = 1
+llm_load_print_meta: pooling type     = 0
+llm_load_print_meta: rope type        = 2
+llm_load_print_meta: rope scaling     = linear
+llm_load_print_meta: freq_base_train  = 10000.0
+llm_load_print_meta: freq_scale_train = 1
+llm_load_print_meta: n_yarn_orig_ctx  = 8192
+llm_load_print_meta: rope_finetuned   = unknown
+llm_load_print_meta: ssm_d_conv       = 0
+llm_load_print_meta: ssm_d_inner      = 0
+llm_load_print_meta: ssm_d_state      = 0
+llm_load_print_meta: ssm_dt_rank      = 0
+llm_load_print_meta: model type       = ?B
+llm_load_print_meta: model ftype      = Q5_K - Medium
+llm_load_print_meta: model params     = 1.84 B
+llm_load_print_meta: model size       = 1.31 GiB (6.12 BPW) 
+llm_load_print_meta: general.name     = Qwen
+llm_load_print_meta: BOS token        = 151643 '<|endoftext|>'
+llm_load_print_meta: EOS token        = 151643 '<|endoftext|>'
+llm_load_print_meta: UNK token        = 151643 '<|endoftext|>'
+llm_load_print_meta: LF token         = 148848 'ÄĬ'
+llm_load_tensors: ggml ctx size =    0.07 MiB
+llm_load_tensors:        CPU buffer size =  1339.20 MiB
+.....................................................................
+llama_new_context_with_model: n_ctx      = 1024
+llama_new_context_with_model: n_batch    = 256
+llama_new_context_with_model: n_ubatch   = 256
+llama_new_context_with_model: freq_base  = 10000.0
+llama_new_context_with_model: freq_scale = 1
+llama_new_context_with_model: =============check  
+llama_new_context_with_model: ==========before mt19937  
+llama_new_context_with_model: ===========before type assign 
+llama_new_context_with_model: ===========after type assign 
+llama_new_context_with_model: ===========after type assign params.type_k:16842753,type_k:8,type_v:1
+llama_new_context_with_model: ===========before assert 
+llama_new_context_with_model: ===========after assert 
+before ggml_backend_cpu_init
+after ggml_backend_cpu_init
+=========at first=========
+=========after hparams=========
+=========before assign type_k
+=========before create context for each buffer type
+=========after create context for each buffer type
+=========after k v push back
+llama_kv_cache_init:        CPU KV buffer size =   147.00 MiB
+=========after allocate tensors
+llama_new_context_with_model: KV self size  =  147.00 MiB, K (q8_0):   51.00 MiB, V (f16):   96.00 MiB
+llama_new_context_with_model:        CPU  output buffer size =   148.38 MiB
+llama_new_context_with_model:        CPU compute buffer size =   150.38 MiB
+llama_new_context_with_model: graph nodes  = 916
+llama_new_context_with_model: graph splits = 1
+AVX = 0 | AVX_VNNI = 0 | AVX2 = 0 | AVX512 = 0 | AVX512_VBMI = 0 | AVX512_VNNI = 0 | FMA = 0 | NEON = 1 | ARM_FMA = 1 | F16C = 0 | FP16_VA = 1 | WASM_SIMD = 0 | BLAS = 0 | SSE3 = 0 | SSSE3 = 0 | VSX = 0 | MATMUL_INT8 = 1 | 
+Model metadata: {'general.file_type': '17', 'tokenizer.ggml.unknown_token_id': '151643', 'general.architecture': 'qwen', 'qwen.rope.dimension_count': '128', 'qwen.rope.freq_base': '10000.000000', 'qwen.attention.layer_norm_rms_epsilon': '0.000001', 'general.name': 'Qwen', 'qwen.context_length': '8192', 'qwen.block_count': '24', 'qwen.attention.head_count': '16', 'qwen.embedding_length': '2048', 'qwen.feed_forward_length': '11008', 'general.quantization_version': '2', 'tokenizer.ggml.model': 'gpt2', 'tokenizer.ggml.bos_token_id': '151643', 'tokenizer.ggml.eos_token_id': '151643'}
+Using fallback chat format: None
+INFO:     Started server process [177731]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://localhost:8000 (Press CTRL+C to quit)
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =    1171.16 ms /    58 tokens (   20.19 ms per token,    49.52 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =    1673.60 ms /    59 tokens
+INFO:     ::1:60862 - "POST /v1/completions HTTP/1.1" 200 OK
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =     825.41 ms /    19 tokens (   43.44 ms per token,    23.02 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =     983.80 ms /    20 tokens
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =     399.00 ms /    19 tokens (   21.00 ms per token,    47.62 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =     551.29 ms /    20 tokens
+INFO:     ::1:43764 - "POST /v1/completions HTTP/1.1" 200 OK
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =     402.22 ms /    19 tokens (   21.17 ms per token,    47.24 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =     552.84 ms /    20 tokens
+INFO:     ::1:60750 - "POST /v1/completions HTTP/1.1" 200 OK
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =    1021.62 ms /    10 tokens (  102.16 ms per token,     9.79 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =    1097.14 ms /    11 tokens
+INFO:     ::1:45092 - "POST /v1/chat/completions HTTP/1.1" 200 OK
+Exception: [{'type': 'int_from_float', 'loc': ('body', 'logprobs'), 'msg': 'Input should be a valid integer, got a number with a fractional part', 'input': 0.95, 'url': 'https://errors.pydantic.dev/2.6/v/int_from_float'}]
+Traceback (most recent call last):
+  File "/root/data/llama-cpp-python/llama_cpp/server/errors.py", line 171, in custom_route_handler
+    response = await original_route_handler(request)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 315, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: [{'type': 'int_from_float', 'loc': ('body', 'logprobs'), 'msg': 'Input should be a valid integer, got a number with a fractional part', 'input': 0.95, 'url': 'https://errors.pydantic.dev/2.6/v/int_from_float'}]
+INFO:     ::1:47500 - "POST /v1/completions HTTP/1.1" 500 Internal Server Error
+Exception: [{'type': 'int_from_float', 'loc': ('body', 'logprobs'), 'msg': 'Input should be a valid integer, got a number with a fractional part', 'input': 0.95, 'url': 'https://errors.pydantic.dev/2.6/v/int_from_float'}]
+Traceback (most recent call last):
+  File "/root/data/llama-cpp-python/llama_cpp/server/errors.py", line 171, in custom_route_handler
+    response = await original_route_handler(request)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 315, in app
+    raise validation_error
+fastapi.exceptions.RequestValidationError: [{'type': 'int_from_float', 'loc': ('body', 'logprobs'), 'msg': 'Input should be a valid integer, got a number with a fractional part', 'input': 0.95, 'url': 'https://errors.pydantic.dev/2.6/v/int_from_float'}]
+INFO:     ::1:38264 - "POST /v1/completions HTTP/1.1" 500 Internal Server Error
+INFO:     ::1:49294 - "POST / HTTP/1.1" 404 Not Found
+INFO:     ::1:36834 - "POST / HTTP/1.1" 404 Not Found
+INFO:     ::1:45172 - "POST /v1 HTTP/1.1" 404 Not Found
+INFO:     ::1:49432 - "GET / HTTP/1.1" 404 Not Found
+INFO:     ::1:51640 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:51640 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     ::1:52098 - "GET / HTTP/1.1" 404 Not Found
+INFO:     ::1:52098 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     ::1:50864 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:51620 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:51620 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:51644 - "GET /docs HTTP/1.1" 200 OK
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =     319.51 ms /    15 tokens (   21.30 ms per token,    46.95 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =     438.32 ms /    16 tokens
+INFO:     ::1:45066 - "POST /v1/completions HTTP/1.1" 200 OK
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =      92.15 ms /     4 tokens (   23.04 ms per token,    43.41 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =     119.18 ms /     5 tokens
+INFO:     ::1:35752 - "POST /v1/completions HTTP/1.1" 200 OK
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =       0.00 ms /     1 tokens (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:        eval time =      27.04 ms /     1 runs   (   27.04 ms per token,    36.98 tokens per second)
+llama_print_timings:       total time =      33.56 ms /     2 tokens
+INFO:     ::1:34012 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     ::1:34016 - "GET /v1/models HTTP/1.1" 200 OK
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =     317.95 ms /    15 tokens (   21.20 ms per token,    47.18 tokens per second)
+llama_print_timings:        eval time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:       total time =     436.86 ms /    16 tokens
+INFO:     ::1:38962 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     ::1:44822 - "POST /v1/completions HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 240, in app
+    json_body = await request.json()
+  File "/usr/local/lib/python3.10/dist-packages/starlette/requests.py", line 252, in json
+    self._json = json.loads(body)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 1 (char 20)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/data/llama-cpp-python/llama_cpp/server/errors.py", line 171, in custom_route_handler
+    response = await original_route_handler(request)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/routing.py", line 258, in app
+    raise validation_error from e
+fastapi.exceptions.RequestValidationError: [{'type': 'json_invalid', 'loc': ('body', 20), 'msg': 'JSON decode error', 'input': {}, 'ctx': {'error': 'Expecting property name enclosed in double quotes'}}]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/protocols/http/h11_impl.py", line 407, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "/usr/local/lib/python3.10/dist-packages/uvicorn/middleware/proxy_headers.py", line 69, in __call__
+    return await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/fastapi/applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/applications.py", line 123, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette_context/middleware/raw_middleware.py", line 92, in __call__
+    await self.app(scope, receive, send_wrapper)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/middleware/exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 758, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 778, in app
+    await route.handle(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 299, in handle
+    await self.app(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 79, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 64, in wrapped_app
+    raise exc
+  File "/usr/local/lib/python3.10/dist-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    await app(scope, receive, sender)
+  File "/usr/local/lib/python3.10/dist-packages/starlette/routing.py", line 74, in app
+    response = await func(request)
+  File "/root/data/llama-cpp-python/llama_cpp/server/errors.py", line 179, in custom_route_handler
+    json_body = await request.json()
+  File "/usr/local/lib/python3.10/dist-packages/starlette/requests.py", line 252, in json
+    self._json = json.loads(body)
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 3 column 1 (char 20)
+Llama.generate: prefix-match hit
+
+llama_print_timings:        load time =    1171.26 ms
+llama_print_timings:      sample time =       0.00 ms /     1 runs   (    0.00 ms per token,      inf tokens per second)
+llama_print_timings: prompt eval time =       0.00 ms /     1 tokens (    0.00 ms per token,      inf tokens per second)
+llama_print_timings:        eval time =      28.11 ms /     1 runs   (   28.11 ms per token,    35.57 tokens per second)
+llama_print_timings:       total time =      34.96 ms /     2 tokens
+INFO:     ::1:44826 - "POST /v1/completions HTTP/1.1" 200 OK
+INFO:     ::1:40508 - "GET /docs HTTP/1.1" 200 OK
+INFO:     ::1:40508 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [177731]
